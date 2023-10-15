@@ -20,6 +20,7 @@ Link do Desenvolvimento Web:
 ADICIONAR cm Screencast
 
 Link com o Documento das Histórias:
+
 https://docs.google.com/document/d/1zfiQK3KUENMLTBgaPRnRAKbZ2JexZd_piTdchEgYtv4/edit?pli=1
 
 Screencast:
