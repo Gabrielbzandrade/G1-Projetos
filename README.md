@@ -1,11 +1,11 @@
-# Grupo 1 - Projetos 
+# Grupo 1 - Lumos 
 Projeto da matéria de Projetos, do segundo período de Ciência da Computação na Cesar School.
 
 Definição do Projeto: 
 
 Somos um grupo de estudantes de Design e Ciência da Computação da CESAR School, comprometidos em fornecer as melhores soluções para nossos clientes. Nossa missão atual é com o Gotas de Flor com Amor.
 
-Equipe Ciência da Computação:
+Equipe Ciência da Computação Lumos:
 - Gabriel Bezerra de Andrade - gba@cesar.school
 - Gabriel Caetano - gcgpf@cesar.school
 - Gabriel Henriques Belliato - ghb@cesar.school
@@ -20,11 +20,12 @@ Link do Desenvolvimento Web:
 ADICIONAR cm Screencast
 
 Link com o Documento das Histórias:
+
 https://docs.google.com/document/d/1zfiQK3KUENMLTBgaPRnRAKbZ2JexZd_piTdchEgYtv4/edit?pli=1
 
 Screencast:
 
-ADICIONAR 
+https://drive.google.com/file/d/1fRVFUouTcl74NUxHUvTavrubNXG3ZR0g/view?usp=sharing 
 
 Diagrama de Atividades:
 
