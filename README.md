@@ -3,7 +3,7 @@ Projeto da matéria de Projetos, do segundo período de Ciência da Computação
 
 Definição do Projeto: 
 
-Desenvolvimento web com o objetivo de . Esse software terá como foco a aplicação do conceito da curva de esquecimento, visando aprimorar a eficácia do aprendizado por meio de perguntas estruturadas.
+Somos um grupo de estudantes de Design e Ciência da Computação da CESAR School, comprometidos em fornecer as melhores soluções para nossos clientes. Nossa missão atual é com o Gotas de Flor com Amor.
 
 Equipe Ciência da Computação:
 - Gabriel Bezerra de Andrade - gba@cesar.school
@@ -14,6 +14,10 @@ Equipe Ciência da Computação:
 - Leticia Lopes Moreira - llm3@cesar.school
 
 --SR1------------
+
+Link do Desenvolvimento Web:
+
+ADICIONAR cm Screencast
 
 Link com o Documento das Histórias:
 https://docs.google.com/document/d/1zfiQK3KUENMLTBgaPRnRAKbZ2JexZd_piTdchEgYtv4/edit?pli=1
