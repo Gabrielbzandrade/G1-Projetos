@@ -35,3 +35,6 @@ def cadastropadrinhos(request):
         'entrar': 'inicio'
     }
     return render(request, 'apps/baselogin.html', context)
+
+def portalpadrinhos(request):
+    return render(request, 'apps/portalpadrinhos.html')
