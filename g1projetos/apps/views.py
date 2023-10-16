@@ -56,26 +56,32 @@ def portalpadrinhos(request):
 def superman(request):
     context = {
         'nome': 'Superman',
-        'texto': 'add texto de cada um',
-        'imagem': 'imagem de cada um'
+        'texto': 'Agora, eu tenho a oportunidade de aprender muitas coisas novas todos os dias. Os professores são atenciosos e sempre me ajudam a entender os assuntos que são mais difíceis para mim. Além disso, a ONG também me proporciona refeições nutritivas, o que me deixa com energia para estudar e brincar. O que eu mais gosto é que, além das aulas, temos muitas atividades divertidas, como jogos, desenhos e até mesmo passeios. Eu fiz muitos amigos aqui e sempre me sinto apoiado por todos. Estar na ONG me faz sentir especial e acreditar que eu posso alcançar meus sonhos no futuro. Estou muito grato por tudo o que a ONG faz por mim e por outras crianças como eu.',
+        'imagem': 'https://brandlogos.net/wp-content/uploads/2014/10/Superman-vector.png'
 
     }
     return render(request, 'apps/baseafilhados.html', context)
 
 def ariel(request):
     context = {
-        
+        'nome': 'Ariel',
+        'texto': 'Na minha ONG, tenho uma experiência incrível! Todos os dias, sou cercado por pessoas incríveis que me ajudam a aprender, crescer e sonhar alto. Recebo educação de qualidade que me abre portas para um futuro brilhante. Além disso, sempre tenho uma refeição deliciosa para me alimentar e muitos amigos com quem brincar e compartilhar histórias. A ONG é como uma segunda casa para mim, onde sou amado e apoiado, e estou muito agradecido por fazer parte desta família. Juntos, estamos construindo um amanhã melhor.',
+        'imagem': 'https://mundodisneyprincess.files.wordpress.com/2014/01/administrar-o-mar.png'
     }
     return render(request, 'apps/baseafilhados.html', context)
 
 def batman(request):
     context = {
-        
+        'nome': 'Batman',
+        'texto': 'Minha experiência na ONG tem sido incrível! Aqui, eu tenho a oportunidade de aprender muitas coisas novas, brincar com outras crianças e até receber ajuda com meus estudos. Os professores são muito legais e sempre estão dispostos a me ajudar quando eu preciso. Além disso, a comida é deliciosa e me ajuda a ter energia para brincar e aprender. Estou muito feliz por fazer parte dessa ONG, pois sei que ela está me ajudando a crescer e a ter um futuro melhor!',
+        'imagem': 'https://static.adecoretecidos.com.br/public/adecoretecidos/imagens/produtos/painel-sublimado-batman-11748.png'
     }
     return render(request, 'apps/baseafilhados.html', context)
 
 def cinderela(request):
     context = {
-        
+        'nome': 'Cinderela',
+        'texto': 'Na ONG onde estou matriculada, minha experiência tem sido incrível. Eu aprendo muitas coisas interessantes e faço amigos com quem posso brincar e conversar. Os professores são legais e sempre me ajudam quando tenho dificuldades. Além disso, a ONG me oferece alimento gostoso e nutritivo todos os dias. Eu me sinto feliz e cuidada aqui, e sei que essa experiência está me ajudando a crescer e a ser uma pessoa melhor.',
+        'imagem': 'https://i.ebayimg.com/images/g/DR4AAOSw8QhgWDtG/s-l1600.png'
     }
     return render(request, 'apps/baseafilhados.html', context)

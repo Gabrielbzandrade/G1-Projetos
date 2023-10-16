@@ -5,7 +5,7 @@
     .imagem {
         margin: 0;
         position: absolute;
-        top: 48%;
+        top: 55%;
         left: 22%;
         -ms-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
@@ -41,20 +41,17 @@
 
     <div class = "color-box">
         <div class="textoplaceholder">
-            <h5>Relato de Superman</h5>
+            <h5>Relato de {{nome}}</h5>
                 <p>
-                    Agora, eu tenho a oportunidade de aprender muitas coisas novas todos os dias. Os professores são atenciosos e sempre me ajudam a entender os assuntos que são mais difíceis para mim. 
-                    Além disso, a ONG também me proporciona refeições nutritivas, o que me deixa com energia para estudar e brincar.
-                    O que eu mais gosto é que, além das aulas, temos muitas atividades divertidas, como jogos, desenhos e até mesmo passeios. Eu fiz muitos amigos aqui e sempre me sinto apoiado por todos. 
-                    Estar na ONG me faz sentir especial e acreditar que eu posso alcançar meus sonhos no futuro. Estou muito grato por tudo o que a ONG faz por mim e por outras crianças como eu.
+                    {{texto}}
                 </p>
         </div>
     </div>
     <div class="imagem">
-        <img src="https://brandlogos.net/wp-content/uploads/2014/10/Superman-vector.png" 
+        <img src={{imagem}} 
             class="rounded-circle"
             alt="foto de perfil"
-            width="530"
+            width="400"
             height=""/>
     </div>
     {% endblock content %}
