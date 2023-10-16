@@ -17,7 +17,9 @@ Equipe Ciência da Computação Lumos:
 
 Link do Desenvolvimento Web:
 
-ADICIONAR cm Screencast
+lumosdeploy.azurewebsites.net 
+
+ADICIONAR SCREENCAST
 
 Link com o Documento das Histórias:
 
