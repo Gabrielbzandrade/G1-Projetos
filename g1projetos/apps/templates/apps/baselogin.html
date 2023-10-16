@@ -46,7 +46,7 @@
     {
         top: -20px;
         left: 0;
-        color: #ffff00;
+        color: #ffffff;
         font-size: 12px;
     }
     .forget{
@@ -84,23 +84,30 @@
 {% block content %}
 <div class="center">
     <form class="login">
-        <h2>Cadastro</h2>
+        <h2>{{title}}</h2>
+
+        {% for text in texts %}
         <div class="box-user">
             <input type="text" nome="" required>
-            <label>Informe seu E-mail</label>
+            <label>{{text}}</label>
         </div>
+        {% endfor %}
+
+        {% for password in passwords %}
         <div class="box-user">
             <input type="password" nome="" required>
-            <label>Informe sua Senha</label>
+            <label>{{password}}</label>
         </div>
-        <div class="box-user">
-            <input type="password" nome="" required>
-            <label>Confirme sua Senha</label>
-        </div>
+        {% endfor %}
+
         <div>
-            <a href="{% url 'portalpadrinhos' %}" class="forget">Login</a>
+            {% for link in links %}
+            <a href="{% url link.ref %}" class="forget">{{link.title}}</a>
+            <br>
+            {% endfor %}
         </div>
-        <a href="{% url 'portalpadrinhos' %}" class="btn">Entrar</a>
+
+        <a href="{% url entrar %}" class="btn">Entrar</a>
     </form>
 </div>
 {% endblock content %}
