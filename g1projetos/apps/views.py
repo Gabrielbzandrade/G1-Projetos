@@ -38,7 +38,7 @@ def cadastropadrinhos(request):
 
 def portalpadrinhos(request):
     context = {
-        'lista': [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+        'lista': [i for i in range(12)],
         'afilhados': ['Superman', 'Ariel', 'Batman', 'Cinderela']
     }
     return render(request, 'apps/portalpadrinhos.html', context)
