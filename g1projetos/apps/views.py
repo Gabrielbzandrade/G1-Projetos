@@ -12,7 +12,7 @@ def loginpadrinhos(request):
         'texts': ['E-mail'],
         'passwords': ['Senha'],                          # Mudar para pagina de esquecimento de senha
         'links': [{'title': 'Esqueceu sua senha?', 'ref': 'inicio'}, {'title': 'Criar Conta', 'ref': 'cadastropadrinhos'}],
-        'entrar': 'inicio' # Mudar para portalpadrinhos
+        'entrar': 'portalpadrinhos' # Mudar para portalpadrinhos
     }
     return render(request, 'apps/baselogin.html', context)
 
@@ -37,4 +37,8 @@ def cadastropadrinhos(request):
     return render(request, 'apps/baselogin.html', context)
 
 def portalpadrinhos(request):
-    return render(request, 'apps/portalpadrinhos.html')
+    context = {
+        'lista': [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+        'afilhados': ['Superman', 'Ariel', 'Batman', 'Cinderela']
+    }
+    return render(request, 'apps/portalpadrinhos.html', context)
