@@ -19,15 +19,13 @@ Link do Desenvolvimento Web:
 
 lumosdeploy.azurewebsites.net 
 
-ADICIONAR SCREENCAST
-
 Link com o Documento das Histórias:
 
 https://docs.google.com/document/d/1zfiQK3KUENMLTBgaPRnRAKbZ2JexZd_piTdchEgYtv4/edit?pli=1
 
 Screencast:
 
- https://drive.google.com/file/d/1YW19rTx8aWZ5lqP0KNIiDnaWW78rQE6k/view?usp=sharing
+https://drive.google.com/file/d/1YW19rTx8aWZ5lqP0KNIiDnaWW78rQE6k/view?usp=sharing
 
 Diagrama de Atividades:
 
