@@ -31,7 +31,7 @@ Screencast:
 
 Diagrama de Atividades:
 
-ADICIONAR
+https://miro.com/app/board/uXjVNb8t0ag=/?share_link_id=141006039923
 
 Issue Bug Tracker:
 
