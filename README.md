@@ -1,11 +1,11 @@
-# Grupo 1 - Lumos 
+# Grupo 1 - Étmus
 Projeto da matéria de Projetos, do segundo período de Ciência da Computação na Cesar School.
 
 Definição do Projeto: 
 
 Somos um grupo de estudantes de Design e Ciência da Computação da CESAR School, comprometidos em fornecer as melhores soluções para nossos clientes. Nossa missão atual é com o Gotas de Flor com Amor.
 
-Equipe Ciência da Computação Lumos:
+Equipe Ciência da Computação Étmus:
 - Gabriel Bezerra de Andrade - gba@cesar.school
 - Gabriel Caetano - gcgpf@cesar.school
 - Gabriel Henriques Belliato - ghb@cesar.school
@@ -31,7 +31,7 @@ Screencast:
 
 Diagrama de Atividades:
 
-ADICIONAR
+https://miro.com/app/board/uXjVNb8t0ag=/?share_link_id=141006039923
 
 Issue Bug Tracker:
 

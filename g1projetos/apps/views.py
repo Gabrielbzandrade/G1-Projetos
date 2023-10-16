@@ -21,7 +21,7 @@ def loginfuncionarios(request):
         'title': 'Login Funcionários',
         'texts': ['E-mail'],
         'passwords': ['Senha'],                   # Mudar para pagina de esquecimento de senha
-        'links': [{'title': 'Esqueceu sua senha?', 'ref': 'inicio'}],
+        'links': [{'title': 'Esqueceu sua senha?', 'ref': 'inicio'}, {'title': 'Criar Conta Institucional', 'ref': 'cadastrofuncionarios'}],
         'entrar': 'inicio' # Mudar para portalfuncionários
     }
     return render(request, 'apps/baselogin.html', context)
@@ -29,9 +29,19 @@ def loginfuncionarios(request):
 def cadastropadrinhos(request):
     context = {
         'title': 'Cadastro Padrinhos',
-        'texts': ['Informe se E-mail'],
-        'passwords': ['Informe sua Senha', 'Confirme sua Senha'],
+        'texts': ['Informe seu E-mail'],
+        'passwords': ['Informe sua Senha'],
         'links': [{'title': 'Login', 'ref': 'loginpadrinhos'}],
+        'entrar': 'inicio'
+    }
+    return render(request, 'apps/baselogin.html', context)
+
+def cadastrofuncionarios(request):
+    context = {
+        'title': 'Cadastro Funcionários',
+        'texts': ['Informe seu E-mail institucional'],
+        'passwords': ['Informe sua Senha'],
+        'links': [{'title': 'Login', 'ref': 'loginfuncionarios'}],
         'entrar': 'inicio'
     }
     return render(request, 'apps/baselogin.html', context)
@@ -42,3 +52,27 @@ def portalpadrinhos(request):
         'afilhados': ['Superman', 'Ariel', 'Batman', 'Cinderela']
     }
     return render(request, 'apps/portalpadrinhos.html', context)
+
+def superman(request):
+    context = {
+
+    }
+    return render(request, 'apps/baseafilhados.html', context)
+
+def ariel(request):
+    context = {
+        
+    }
+    return render(request, 'apps/baseafilhados.html', context)
+
+def batman(request):
+    context = {
+        
+    }
+    return render(request, 'apps/baseafilhados.html', context)
+
+def cinderela(request):
+    context = {
+        
+    }
+    return render(request, 'apps/baseafilhados.html', context)

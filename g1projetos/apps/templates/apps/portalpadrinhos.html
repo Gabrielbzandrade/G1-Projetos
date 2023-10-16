@@ -8,7 +8,7 @@
     <br>
     {% endfor %}
     {% for afilhado in afilhados %}
-    <a style="background-color: #E56A54; color: #000000" class="btn btn-danger" href="{{afilhado}}" role="button">{{afilhado}}<a></a>
+    <a style="background-color: #E56A54; color: #000000" class="btn btn-danger" href="{% url afilhado %}" role="button">{{afilhado}}<a></a>
     {% endfor %}
     </div>
 {% endblock content %}
