@@ -84,21 +84,23 @@
 {% block content %}
 <div class="center">
     <form class="login">
-        <h2>Login</h2>
+        <h2>Cadastro</h2>
         <div class="box-user">
             <input type="text" nome="" required>
-            <label>Usuario</label>
+            <label>Informe seu E-mail</label>
         </div>
         <div class="box-user">
             <input type="password" nome="" required>
-            <label>Senha</label>
+            <label>Informe sua Senha</label>
+        </div>
+        <div class="box-user">
+            <input type="password" nome="" required>
+            <label>Confirme sua Senha</label>
         </div>
         <div>
-            <a href="#" class="forget">Esqueceu a senha?</a>
-            <br>
-            <a href="{% url 'cadastropadrinhos' %}" class="forget">Criar Conta</a>
+            <a href="{% url 'portalpadrinhos' %}" class="forget">Login</a>
         </div>
-        <a href="#" class="btn">Entrar</a>
+        <a href="{% url 'portalpadrinhos' %}" class="btn">Entrar</a>
     </form>
 </div>
 {% endblock content %}

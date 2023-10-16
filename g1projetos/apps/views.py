@@ -11,3 +11,6 @@ def portalpadrinhos(request):
 
 def portalfuncionarios(request):
     return render(request, 'apps/portalfuncionarios.html')
+
+def cadastropadrinhos(request):
+    return render(request, 'apps/cadastropadrinhos.html')
