@@ -55,6 +55,9 @@ def portalpadrinhos(request):
 
 def superman(request):
     context = {
+        'nome': 'Superman',
+        'texto': 'add texto de cada um',
+        'imagem': 'imagem de cada um'
 
     }
     return render(request, 'apps/baseafilhados.html', context)
