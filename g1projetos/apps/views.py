@@ -17,7 +17,14 @@ def loginpadrinhos(request):
     return render(request, 'apps/baselogin.html', context)
 
 def loginfuncionarios(request):
-    return render(request, 'apps/baselogin.html')
+    context = {
+        'title': 'Login Funcionários',
+        'texts': ['E-mail'],
+        'passwords': ['Senha'],                   # Mudar para pagina de esquecimento de senha
+        'links': [{'title': 'Esqueceu sua senha?', 'ref': 'inicio'}],
+        'entrar': 'inicio' # Mudar para portalfuncionários
+    }
+    return render(request, 'apps/baselogin.html', context)
 
 def cadastropadrinhos(request):
     context = {
