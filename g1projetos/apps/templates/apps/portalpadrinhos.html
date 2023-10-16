@@ -1,6 +1,6 @@
 {% extends 'apps/baseprincipal.html' %}
 {% block content %}
-<div class="topcenter">
+<div class="topcentertitle">
     <h1>Meus Afilhados</h1>
 </div>
 <div class="d-grid gap-2 col-6 mx-auto">
@@ -8,7 +8,7 @@
     <br>
     {% endfor %}
     {% for afilhado in afilhados %}
-    <a style="background-color: #E56A54;" class="btn btn-danger" href="#" role="button">{{afilhado}}<a></a>
+    <a style="background-color: #E56A54; color: #000000" class="btn btn-danger" href="#" role="button">{{afilhado}}<a></a>
     {% endfor %}
     </div>
 {% endblock content %}
