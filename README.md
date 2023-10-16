@@ -25,7 +25,7 @@ https://docs.google.com/document/d/1zfiQK3KUENMLTBgaPRnRAKbZ2JexZd_piTdchEgYtv4/
 
 Screencast:
 
-https://drive.google.com/file/d/1fRVFUouTcl74NUxHUvTavrubNXG3ZR0g/view?usp=sharing 
+ https://drive.google.com/file/d/1YW19rTx8aWZ5lqP0KNIiDnaWW78rQE6k/view?usp=sharing
 
 Diagrama de Atividades:
 
