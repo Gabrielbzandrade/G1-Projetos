@@ -1,7 +1,7 @@
 # Grupo 1 - Étmus
 Projeto da matéria de Projetos, do segundo período de Ciência da Computação na Cesar School.
 
-Definição do Projeto: 
+<h2>Definição do Projeto:</h2>
 
 Somos um grupo de estudantes de Design e Ciência da Computação da CESAR School, comprometidos em fornecer as melhores soluções para nossos clientes. Nossa missão atual é com o Gotas de Flor com Amor.
 
@@ -15,27 +15,37 @@ Equipe Ciência da Computação Étmus:
 
 --SR1------------
 
-Link do Desenvolvimento Web:
+<h2>Link do Desenvolvimento Web:</h2>
 
 lumosdeploy.azurewebsites.net 
 
-Link com o Documento das Histórias:
+<h2>Link com o Documento das Histórias:</h2>
 
 https://docs.google.com/document/d/1zfiQK3KUENMLTBgaPRnRAKbZ2JexZd_piTdchEgYtv4/edit?pli=1
 
-Screencast:
+<h2>Screencast:</h2>
 
 https://drive.google.com/file/d/1YW19rTx8aWZ5lqP0KNIiDnaWW78rQE6k/view?usp=sharing
 
-Diagrama de Atividades:
+<h2>Diagrama de Atividades:</h2>
 
 https://miro.com/app/board/uXjVNb8t0ag=/?share_link_id=141006039923
 
-Issue Bug Tracker:
+<h2>Issue Bug Tracker:</h2>
 
-ADICIONAR
+1. se o site for colocado em modo janela, em algumas proporções, os botoes da barra de navegação somem
 
-Relato Pair Programming: 
+2. em algumas proporções, os botoes da barra de navegação podem sumir e serem substituídos por um menu estilo "sanduíche" - este menu não tendo nenhuma função
+
+3. ao tentar fazer login como funcionario, é levado para tela inicial (falta implementação)
+
+4. ao tentar fazer cadastro como padrinho, é direcionado para tela inicial (falta implementação)
+
+5. Em algumas máquinas, a tela "Meus Afilhados" pode apresentar um bug visual onde os botões e título estão mal posicionados
+
+6. Botão de "Esqueceu sua Senha?" não possui função
+
+<h2>Relato Pair Programming:</h2>
 
 1- Leticia Gomes e Hugo Rocha formaram uma dupla eficiente durante a codificação. Mantiveram o foco na organização e na padronização dos códigos visando atingir uma maior qualidade. A dupla se complementou bastante durante o processo, ratificando uma experiência positiva da técnica experimentada. Além disso, ambos fizeram pesquisas de forma proativa, trazendo insights valiosos para a evolução do projeto.
 
