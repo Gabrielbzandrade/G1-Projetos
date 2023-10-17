@@ -37,11 +37,15 @@ https://miro.com/app/board/uXjVNb8t0ag=/?share_link_id=141006039923
 
 2. Em algumas proporções, os botoes da barra de navegação podem sumir e serem substituídos por um menu estilo "sanduíche" - este menu não tendo nenhuma função
 
+   ![image](https://github.com/Gabrielbzandrade/G1-Projetos/assets/127201879/1661c787-9a63-44e4-bf53-8b8a86b8c219)
+
 3. Ao tentar fazer login como funcionario, é levado para tela inicial (falta implementação)
 
 4. Ao tentar fazer cadastro como padrinho, é direcionado para tela inicial (falta implementação)
 
 5. Em algumas máquinas, a tela "Meus Afilhados" pode apresentar um bug visual onde os botões e título estão mal posicionados
+
+   ![image](https://github.com/Gabrielbzandrade/G1-Projetos/assets/127201879/f056de73-1905-4a91-9d38-55450aad8b4e)
 
 6. Botão de "Esqueceu sua Senha?" não possui função
 
