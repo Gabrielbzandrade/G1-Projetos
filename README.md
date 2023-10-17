@@ -13,7 +13,7 @@ Equipe Ciência da Computação Étmus:
 - Letícia Gomes da Silva - lgs@cesar.school
 - Leticia Lopes Moreira - llm3@cesar.school
 
---SR1------------
+<h1>--SR1------------</h1>
 
 <h2>Link do Desenvolvimento Web:</h2>
 
@@ -33,13 +33,13 @@ https://miro.com/app/board/uXjVNb8t0ag=/?share_link_id=141006039923
 
 <h2>Issue Bug Tracker:</h2>
 
-1. se o site for colocado em modo janela, em algumas proporções, os botoes da barra de navegação somem
+1. Se o site for colocado em modo janela, em algumas proporções, os botoes da barra de navegação somem
 
-2. em algumas proporções, os botoes da barra de navegação podem sumir e serem substituídos por um menu estilo "sanduíche" - este menu não tendo nenhuma função
+2. Em algumas proporções, os botoes da barra de navegação podem sumir e serem substituídos por um menu estilo "sanduíche" - este menu não tendo nenhuma função
 
-3. ao tentar fazer login como funcionario, é levado para tela inicial (falta implementação)
+3. Ao tentar fazer login como funcionario, é levado para tela inicial (falta implementação)
 
-4. ao tentar fazer cadastro como padrinho, é direcionado para tela inicial (falta implementação)
+4. Ao tentar fazer cadastro como padrinho, é direcionado para tela inicial (falta implementação)
 
 5. Em algumas máquinas, a tela "Meus Afilhados" pode apresentar um bug visual onde os botões e título estão mal posicionados
 
