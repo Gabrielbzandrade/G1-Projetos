@@ -22,7 +22,7 @@ def loginfuncionarios(request):
         'texts': ['E-mail'],
         'passwords': ['Senha'],                   # Mudar para pagina de esquecimento de senha
         'links': [{'title': 'Esqueceu sua senha?', 'ref': 'inicio'}, {'title': 'Criar Conta Institucional', 'ref': 'cadastrofuncionarios'}],
-        'entrar': 'inicio' # Mudar para portalfuncionários
+        'entrar': 'portalfuncionarios' 
     }
     return render(request, 'apps/baselogin.html', context)
 
@@ -45,6 +45,10 @@ def cadastrofuncionarios(request):
         'entrar': 'inicio'
     }
     return render(request, 'apps/baselogin.html', context)
+
+def portalfuncionarios(request):
+    return render(request, 'apps/portalfuncionarios.html')
+
 
 def portalpadrinhos(request):
     context = {
