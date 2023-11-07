@@ -14,4 +14,6 @@ urlpatterns = [
     path('Ariel/', views.ariel, name="Ariel"),
     path('Batman/', views.batman, name="Batman"),
     path('Cinderela/', views.cinderela, name="Cinderela"),
+    path('Calendario/', views.calendario, name="Calendario"),
+    path('Adicionareventos/', views.adicionarevento, name="Adicionarevento"),
 ]

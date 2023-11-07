@@ -1,4 +1,6 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
+from .forms import CalendarioForm
+from .models import Calendario
 
 def inicio(request):
     return render(request, 'apps/inicio.html')
@@ -89,3 +91,17 @@ def cinderela(request):
         'imagem': 'https://i.ebayimg.com/images/g/DR4AAOSw8QhgWDtG/s-l1600.png'
     }
     return render(request, 'apps/baseafilhados.html', context)
+
+def adicionarevento (request):
+    if request.method == 'POST':
+        form = CalendarioForm(request.POST)
+        if form.is_valid():
+            form.save()
+            return redirect ('Calendario')
+    else:
+        form = CalendarioForm()
+    return render(request, 'apps/adicionareventos.html', {'form': form})
+
+def calendario (request):
+    eventos = Calendario.objects.order_by('data')
+    return render(request, 'apps/calendario.html', {'eventos': eventos})
