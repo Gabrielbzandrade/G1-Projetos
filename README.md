@@ -17,7 +17,7 @@ Equipe Ciência da Computação Étmus:
 
 <h2>Link do Desenvolvimento Web:</h2>
 
-lumosdeploy.azurewebsites.net 
+https://lumosdeploy.azurewebsites.net 
 
 <h2>Link com o Documento das Histórias:</h2>
 
