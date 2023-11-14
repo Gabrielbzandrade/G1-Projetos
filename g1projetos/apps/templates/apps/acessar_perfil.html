@@ -1,0 +1,31 @@
+{% extends 'apps/baseprincipal.html' %}
+{% block content %}
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+    <div class="container">
+        <table class="table table-bordered table-striped" name="tabela">
+            <tr>
+                <th>Nome</th>
+                <th>Data Nascimento</th>
+                <th>Características</th>
+                <th>História</th>
+                <th>Sobre Mim</th>
+            </tr>
+            {% for perfil in perfils %}
+            <tr>
+                <td>{{perfil.nome}}</td>
+                <td>{{perfil.data_nascimento}}</td>
+                <td>{{perfil.caracteristicas}}</td>
+                <td>{{perfil.historia}}</td>
+                <td>{{perfil.sobre_mim}}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+
+{% endblock content %}

@@ -16,4 +16,8 @@ urlpatterns = [
     path('Cinderela/', views.cinderela, name="Cinderela"),
     path('Calendario/', views.calendario, name="Calendario"),
     path('Adicionareventos/', views.adicionarevento, name="Adicionarevento"),
+    path('relato/', views.relato, name="relato"),
+    path('acesso_relatos/', views.acesso_relatos, name="acesso_relatos"),
+    path ('criar_perfil/', views.criar_perfil, name='criar_perfil'),
+    path ('acessar_perfil/', views.acessar_perfil, name='acessar_perfil'),
 ]

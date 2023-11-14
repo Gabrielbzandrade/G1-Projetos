@@ -1,0 +1,15 @@
+{% extends 'apps/baseprincipal.html' %}
+{% block content %}
+    <form action="{% url 'acesso_relatos' %}" method="post">
+    {% csrf_token %}
+    <div style="text-align: center;" class="center">
+        <h2>Adicionar Relato</h2>
+        Nome: <input name="titulo" class="form-control-sm" type="text">
+        <br>
+        Relato: <input name="texto" class="form-control-sm" type="text">
+        <br>
+        <br>
+        <button name="cadastrar_relato" class="form-control-sm">Cadastrar Relato</button>
+    </div>
+    </form>
+{% endblock content %}

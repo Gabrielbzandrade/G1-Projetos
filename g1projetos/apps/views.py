@@ -1,6 +1,6 @@
 from django.shortcuts import render, redirect
 from .forms import CalendarioForm
-from .models import Calendario
+from .models import Calendario, Relatos, Perfil
 
 def inicio(request):
     return render(request, 'apps/inicio.html')
@@ -105,3 +105,40 @@ def adicionarevento (request):
 def calendario (request):
     eventos = Calendario.objects.order_by('data')
     return render(request, 'apps/calendario.html', {'eventos': eventos})
+
+def relato(request):
+    return render(request,'apps/relato.html')
+
+def acesso_relatos(request):
+    if request.method == 'POST':
+        novo_relato = Relatos()
+        novo_relato.titulo = request.POST.get('titulo')
+        novo_relato.texto = request.POST.get('texto')
+
+        if novo_relato.titulo and novo_relato.texto:
+            novo_relato.save()
+
+    relatos = {
+        'relatos': Relatos.objects.all()
+    }
+    return render(request,'apps/acesso_relatos.html', relatos)
+
+def criar_perfil(request):
+    return render(request,'apps/criar_perfil.html')
+
+def acessar_perfil(request):
+    if request.method == 'POST':
+        novo_perfil = Perfil()
+        novo_perfil.nome = request.POST.get('nome')
+        novo_perfil.data_nascimento = request.POST.get('data_nascimento')
+        novo_perfil.caracteristicas = request.POST.get('caracteristicas')
+        novo_perfil.historia = request.POST.get('historia')
+        novo_perfil.sobre_mim = request.POST.get('sobre_mim')
+
+        if novo_perfil.nome and novo_perfil.data_nascimento and novo_perfil.caracteristicas and novo_perfil.historia and novo_perfil.sobre_mim:
+            novo_perfil.save()
+
+    perfils = {
+        'perfils': Perfil.objects.all()
+    }
+    return render(request,'apps/acessar_perfil.html', perfils)

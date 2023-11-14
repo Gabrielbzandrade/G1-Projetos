@@ -1,0 +1,21 @@
+{% extends 'apps/baseprincipal.html' %}
+{% block content %}
+<form action="{% url 'acessar_perfil' %}" method="post">
+    {% csrf_token %}
+    <div style="text-align: center;" class="center">
+        <h2>Adicionar Relato</h2>
+        Nome: <input name="nome" class="form-control-sm" type="text">
+        <br>
+        Data de Nascimento: <input name="data_nascimento" class="form-control-sm" type="text">
+        <br>
+        Caracteríticas: <input name="caracteristicas" class="form-control-sm" type="text">
+        <br>
+        História: <input name="historia" class="form-control-sm" type="text">
+        <br>
+        Sobre Mim: <input name="sobre_mim" class="form-control-sm" type="text">
+        <br>
+        <br>
+        <button name="cadastrar_aluno" class="form-control-sm">Cadastrar aluno</button>
+    </div>
+    </form>
+{% endblock content %}
