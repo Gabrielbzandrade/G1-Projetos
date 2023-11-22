@@ -20,4 +20,6 @@ urlpatterns = [
     path('acesso_relatos/', views.acesso_relatos, name="acesso_relatos"),
     path ('criar_perfil/', views.criar_perfil, name='criar_perfil'),
     path ('acessar_perfil/', views.acessar_perfil, name='acessar_perfil'),
+    path('Afilhados/', views.Afilhados, name='Afilhados'),
+    path('perfil_afilhado/<int:id>/', views.perfil_afilhado, name='perfil_afilhado'),
 ]

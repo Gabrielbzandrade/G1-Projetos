@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, get_object_or_404
 from .forms import CalendarioForm
 from .models import Calendario, Relatos, Perfil
 
@@ -142,3 +142,11 @@ def acessar_perfil(request):
         'perfils': Perfil.objects.all()
     }
     return render(request,'apps/acessar_perfil.html', perfils)
+
+def Afilhados(request):
+    Afilhados = Perfil.objects.all()
+    return render(request, 'apps/Afilhados.html', {'afilhados': Afilhados})
+
+def perfil_afilhado(request, nome_afilhado):
+    afilhado = get_object_or_404(Perfil, nome=nome_afilhado)
+    return render(request, 'apps/perfil_afilhado.html', {'afilhado': afilhado})

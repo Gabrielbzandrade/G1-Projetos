@@ -3,7 +3,7 @@
 <form action="{% url 'acessar_perfil' %}" method="post">
     {% csrf_token %}
     <div style="text-align: center;" class="center">
-        <h2>Adicionar Relato</h2>
+        <h2>Criar Perfil</h2>
         Nome: <input name="nome" class="form-control-sm" type="text">
         <br>
         Data de Nascimento: <input name="data_nascimento" class="form-control-sm" type="text">
@@ -15,7 +15,8 @@
         Sobre Mim: <input name="sobre_mim" class="form-control-sm" type="text">
         <br>
         <br>
-        <button name="cadastrar_aluno" class="form-control-sm">Cadastrar aluno</button>
+        <button name="cadastrar_aluno" class="form-control-sm">Cadastrar criança</button>
     </div>
     </form>
 {% endblock content %}
+
