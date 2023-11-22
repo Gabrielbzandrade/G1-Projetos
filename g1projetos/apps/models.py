@@ -13,6 +13,7 @@ class Relatos(models.Model):
 
 class Perfil(models.Model):
     nome = models.TextField(max_length=300)
+    padrinho = models.TextField(max_length=300)
     data_nascimento = models.TextField(max_length=100)
     caracteristicas = models.TextField(max_length=1000)
     historia = models.TextField(max_length=5000)

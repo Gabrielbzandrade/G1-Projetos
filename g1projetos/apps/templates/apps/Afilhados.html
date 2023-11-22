@@ -1,15 +1,33 @@
 {% extends 'apps/baseprincipal.html' %}
 {% block content %}
-
-<div class="topcentertitle">
-    <h1>Meus Afilhados</h1>
-</div>
-
-<div class="d-grid gap-2 col-6 mx-auto">
-    <br>
-    {% for afilhado in Afilhados %}
-        <a style="background-color: #E56A54; color: #000000" class="btn btn-danger" href="{% url 'perfil_afilhado' id=afilhado.id %}" role="button">{{ afilhado.nome }}</a>
-    {% endfor %}
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class="container">
+    <table class="table table-bordered table-striped" name="tabela">
+        <tr>
+            <th>Nome</th>
+            <th>Data Nascimento</th>
+            <th>Características</th>
+            <th>História</th>
+            <th>Sobre Mim</th>
+        </tr>
+        {% for perfil in afilhados %}
+        <tr>
+            <td>{{perfil.nome}}</td>
+            <td>{{perfil.data_nascimento}}</td>
+            <td>{{perfil.caracteristicas}}</td>
+            <td>{{perfil.historia}}</td>
+            <td>{{perfil.sobre_mim}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    <a class="navbar-brand" href="{% url 'portalpadrinhos' %}">
+            <h5>Voltar</h5>
+        </a>
 </div>
 
 {% endblock content %}

@@ -6,6 +6,8 @@
         <h2>Criar Perfil</h2>
         Nome: <input name="nome" class="form-control-sm" type="text">
         <br>
+        Padrinho/Madrinha: <input name="padrinho" class="form-control-sm" type="text">
+        <br>
         Data de Nascimento: <input name="data_nascimento" class="form-control-sm" type="text">
         <br>
         Caracteríticas: <input name="caracteristicas" class="form-control-sm" type="text">
@@ -17,6 +19,10 @@
         <br>
         <button name="cadastrar_aluno" class="form-control-sm">Cadastrar criança</button>
     </div>
-    </form>
+</form>
+    <div class="bottomleft">
+        <a class="navbar-brand" href="{% url 'portalfuncionarios' %}" name="voltar">
+            <h4>Voltar</h4>
+        </a>
+    </div>
 {% endblock content %}
-
