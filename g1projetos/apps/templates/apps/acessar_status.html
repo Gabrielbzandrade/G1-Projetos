@@ -1,0 +1,18 @@
+{% extends 'apps/baseprincipal.html' %}
+{% block content %}
+<br>
+<br>
+<br>
+    <div class="center">
+        <h2>Status Geral Semanal:</h2>
+        <h4>{{status.status}}</h4>
+
+        <br>
+        <br>
+
+        <a class="navbar-brand" href="{% url 'atualizar_status' %}" name="atualizar_status">
+            <h4>Atualizar Status</h4>
+        </a>
+    </div>
+
+{% endblock content %}

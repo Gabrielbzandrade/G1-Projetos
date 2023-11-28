@@ -1,6 +1,6 @@
 from django.shortcuts import render, redirect, get_object_or_404
-from .forms import CalendarioForm
-from .models import Calendario, Relatos, Perfil
+from .forms import ExcluirPerfilForm, CalendarioForm
+from .models import Calendario, Relatos, Perfil, Status
 
 def inicio(request):
     return render(request, 'apps/inicio.html')
@@ -59,39 +59,6 @@ def portalpadrinhos(request):
     }
     return render(request, 'apps/portalpadrinhos.html', context)
 
-def superman(request):
-    context = {
-        'nome': 'Superman',
-        'texto': 'Agora, eu tenho a oportunidade de aprender muitas coisas novas todos os dias. Os professores são atenciosos e sempre me ajudam a entender os assuntos que são mais difíceis para mim. Além disso, a ONG também me proporciona refeições nutritivas, o que me deixa com energia para estudar e brincar. O que eu mais gosto é que, além das aulas, temos muitas atividades divertidas, como jogos, desenhos e até mesmo passeios. Eu fiz muitos amigos aqui e sempre me sinto apoiado por todos. Estar na ONG me faz sentir especial e acreditar que eu posso alcançar meus sonhos no futuro. Estou muito grato por tudo o que a ONG faz por mim e por outras crianças como eu.',
-        'imagem': 'https://brandlogos.net/wp-content/uploads/2014/10/Superman-vector.png'
-
-    }
-    return render(request, 'apps/baseafilhados.html', context)
-
-def ariel(request):
-    context = {
-        'nome': 'Ariel',
-        'texto': 'Na minha ONG, tenho uma experiência incrível! Todos os dias, sou cercado por pessoas incríveis que me ajudam a aprender, crescer e sonhar alto. Recebo educação de qualidade que me abre portas para um futuro brilhante. Além disso, sempre tenho uma refeição deliciosa para me alimentar e muitos amigos com quem brincar e compartilhar histórias. A ONG é como uma segunda casa para mim, onde sou amado e apoiado, e estou muito agradecido por fazer parte desta família. Juntos, estamos construindo um amanhã melhor.',
-        'imagem': 'https://mundodisneyprincess.files.wordpress.com/2014/01/administrar-o-mar.png'
-    }
-    return render(request, 'apps/baseafilhados.html', context)
-
-def batman(request):
-    context = {
-        'nome': 'Batman',
-        'texto': 'Minha experiência na ONG tem sido incrível! Aqui, eu tenho a oportunidade de aprender muitas coisas novas, brincar com outras crianças e até receber ajuda com meus estudos. Os professores são muito legais e sempre estão dispostos a me ajudar quando eu preciso. Além disso, a comida é deliciosa e me ajuda a ter energia para brincar e aprender. Estou muito feliz por fazer parte dessa ONG, pois sei que ela está me ajudando a crescer e a ter um futuro melhor!',
-        'imagem': 'https://static.adecoretecidos.com.br/public/adecoretecidos/imagens/produtos/painel-sublimado-batman-11748.png'
-    }
-    return render(request, 'apps/baseafilhados.html', context)
-
-def cinderela(request):
-    context = {
-        'nome': 'Cinderela',
-        'texto': 'Na ONG onde estou matriculada, minha experiência tem sido incrível. Eu aprendo muitas coisas interessantes e faço amigos com quem posso brincar e conversar. Os professores são legais e sempre me ajudam quando tenho dificuldades. Além disso, a ONG me oferece alimento gostoso e nutritivo todos os dias. Eu me sinto feliz e cuidada aqui, e sei que essa experiência está me ajudando a crescer e a ser uma pessoa melhor.',
-        'imagem': 'https://i.ebayimg.com/images/g/DR4AAOSw8QhgWDtG/s-l1600.png'
-    }
-    return render(request, 'apps/baseafilhados.html', context)
-
 def adicionarevento (request):
     if request.method == 'POST':
         form = CalendarioForm(request.POST)
@@ -144,11 +111,51 @@ def acessar_perfil(request):
     }
     return render(request,'apps/acessar_perfil.html', perfils)
 
-def Afilhados(request):
+def Afilhados_padrinhos(request):
     Afilhados = Perfil.objects.all()
-    return render(request, 'apps/Afilhados.html', {'afilhados': Afilhados})
+    return render(request, 'apps/Afilhados_padrinhos.html', {'afilhados': Afilhados})
+
+def Afilhados_funcionarios(request):
+    Afilhados = Perfil.objects.all()
+    return render(request, 'apps/Afilhados_funcionarios.html', {'afilhados': Afilhados})
 
 def perfil_afilhado(request, id_afilhado):
     afilhado = get_object_or_404(Perfil, id=id_afilhado)
     nome_afilhado = afilhado.nome
-    return render(request, 'apps/perfil_afilhado.html', {'afilhado': afilhado}, nome_afilhado)
+    return render(request, 'apps/perfil_afilhado.html', {'afilhado': afilhado, 'nome_afilhado': nome_afilhado})
+
+def excluir_perfil(request):
+    erro = False
+    if request.method == 'POST':
+        form = ExcluirPerfilForm(request.POST)
+        if form.is_valid():
+            nome = form.cleaned_data['nome']
+            try:
+                perfil = get_object_or_404(Perfil, nome=nome)
+                perfil.delete()
+                return redirect('Afilhados_funcionarios')
+            except:
+                erro = True
+                return render(request, 'apps/excluir_perfil.html', {'form': form, "erro": erro})
+        else:
+            return redirect('excluir_perfil')
+    else:
+        form = ExcluirPerfilForm()
+
+    return render(request, 'apps/excluir_perfil.html', {'form': form})
+
+def atualizar_status(request):
+    return render(request, 'apps/atualizar_status.html')
+
+def acessar_status(request):
+    if request.method == 'POST':
+        status = request.POST.get('status')
+        if status:
+            novo_status = Status(status=status)
+            novo_status.save()
+    
+    status = {
+        'status': Status.objects.last()
+    }
+
+    return render(request, 'apps/acessar_status.html', status)

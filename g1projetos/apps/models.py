@@ -18,3 +18,6 @@ class Perfil(models.Model):
     caracteristicas = models.TextField(max_length=1000)
     historia = models.TextField(max_length=5000)
     sobre_mim = models.TextField(max_length=5000)
+
+class Status(models.Model):
+    status = models.CharField(max_length=15, choices=[('Feliz', 'F'), ('Normal', 'N'), ('Triste', 'T')])

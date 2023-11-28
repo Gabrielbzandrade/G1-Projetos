@@ -2,8 +2,17 @@
 {% block content %}
 <div class="center">
     <a class="btn btn-danger" href="{% url 'criar_perfil' %}" role="button" name="criar_perfil">Criar Perfil</a>
-    <a class="btn btn-danger" href="{% url 'Afilhados' %}" role="button" name="acessarperfil">Acessar perfis</a>
+    <br>
+    <br>
+    <a class="btn btn-danger" href="{% url 'Afilhados_funcionarios' %}" role="button" name="acessarperfil">Acessar perfis</a>
+    <br>
+    <br>
     <a class="btn btn-danger" href="{%url 'relato' %}" role="button" name="atualizacao">Atualização das Crianças</a>
+    <br>
+    <br>
     <a class="btn btn-danger" href="{% url 'Adicionarevento' %}" role="button" name="calendario">Atualizar Calendário</a>
+    <br>
+    <br>
+    <a class="btn btn-danger" href="{% url 'atualizar_status' %}" role="button" name="atualizar_status">Atualizar Status</a>
 </div>
 {% endblock content %}

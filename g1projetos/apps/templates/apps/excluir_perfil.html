@@ -1,0 +1,19 @@
+{% extends 'apps/baseprincipal.html' %}
+{% block content %}
+
+<form method="post">
+    {% csrf_token %}
+    <div style="text-align: center;" class="center">
+        <h2>Digite o nome da criança da qual deseja excluir o perfil:</h2>
+        Nome: <input name="nome" class="form-control-sm" type="text">
+        <br>
+        <br>
+        {% if erro %}
+            <p style="color: red;">A criança selecionada não foi encontrada no banco de dados.</p>
+        {% endif %}
+        <button name="excluir" class="form-control-sm">Excluir</button>
+    </div>
+</form>
+
+
+{% endblock content %}

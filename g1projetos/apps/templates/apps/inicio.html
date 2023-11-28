@@ -1,11 +1,25 @@
 {% extends 'apps/baseprincipal.html' %}
 {% block content %}
-<div class="center">
-    <img src="https://gotasdeflor.org.br/wp-content/uploads/2019/09/crian%C3%A7as-enfileiradas-lousa-gotas-flor-amor-03.jpg" 
-    alt="Crianças ajudadas pelo Gotas de Flor com Amor"
-    width="1000"
-    height="" />
+<div class="slider">
+    <div><img src="https://gotasdeflor.org.br/wp-content/uploads/2019/09/crian%C3%A7as-enfileiradas-lousa-gotas-flor-amor-03.jpg" alt="Crianças ajudadas pelo Gotas de Flor com Amor"></div>
+    <div><img src="https://gotasdeflor.org.br/wp-content/uploads/2019/07/criança-padrinho-gotas-flor-amor-01.jpg" alt="Descrição da segunda imagem"></div>
+    <div><img src="https://gotasdeflor.org.br/wp-content/uploads/2019/09/joinha-gotas-flor-amor-01.jpg" alt="Descrição da terceira imagem"></div>
 </div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $('.slider').slick({
+            autoplay: true,
+            autoplaySpeed: 4000, 
+            arrows: false,
+            dots: false,
+            fade: true,
+            draggable: true  
+        });
+    });
+</script>
 
 {% endblock content %}
 
