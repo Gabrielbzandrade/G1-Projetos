@@ -22,4 +22,6 @@ urlpatterns = [
     path('excluir_perfil/', views.excluir_perfil, name='excluir_perfil'),
     path('atualizar_status/', views.atualizar_status, name="atualizar_status"),
     path('acessar_status/', views.acessar_status, name="acessar_status"),
+    path('feedback/', views.feedback, name="feedback"),
+    path('acessar_feedback/', views.acessar_feedback, name="acessar_feedback"),
 ]

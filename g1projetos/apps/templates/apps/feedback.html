@@ -1,0 +1,22 @@
+{% extends 'apps/baseprincipal.html' %}
+{% block content %}
+    <div class="center">
+        <form id="feedback-form" method="post" action="{% url 'acessar_feedback' %}">
+            {% csrf_token %}
+            <h2>Adicionar um Feedback para a ONG:</h2>
+            Texto: <input name="texto" class="form-control-sm" type="text">
+            <br>
+            <div class="botoes">
+                <label for="Feliz">Feliz</label>
+                <input type="radio" name="feedback" id="Feliz" value="Feliz">
+                <br>
+                <label for="Normal">Normal</label>
+                <input type="radio" name="feedback" id="Normal" value="Normal">
+                <br>
+                <label for="Triste">Triste</label>
+                <input type="radio" name="feedback" id="Triste" value="Triste">
+            </div>
+            <br>
+            <button name= "enviar_feedback" type="submit">Enviar</button>  
+        </form>        
+{% endblock content %}

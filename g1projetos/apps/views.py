@@ -1,6 +1,6 @@
 from django.shortcuts import render, redirect, get_object_or_404
 from .forms import ExcluirPerfilForm, CalendarioForm
-from .models import Calendario, Relatos, Perfil, Status
+from .models import Calendario, Relatos, Perfil, Status, Feedback
 
 def inicio(request):
     return render(request, 'apps/inicio.html')
@@ -81,6 +81,7 @@ def acesso_relatos(request):
         novo_relato = Relatos()
         novo_relato.titulo = request.POST.get('titulo')
         novo_relato.texto = request.POST.get('texto')
+        novo_relato.status = request.POST.get('status') 
 
         if novo_relato.titulo and novo_relato.texto:
             novo_relato.save()
@@ -88,7 +89,7 @@ def acesso_relatos(request):
     relatos = {
         'relatos': Relatos.objects.all()
     }
-    return render(request,'apps/acesso_relatos.html', relatos)
+    return render(request, 'apps/acesso_relatos.html', relatos)
 
 def criar_perfil(request):
     return render(request,'apps/criar_perfil.html')
@@ -137,8 +138,12 @@ def Afilhados_funcionarios(request):
 def perfil_afilhado(request, id_afilhado):
     afilhado = get_object_or_404(Perfil, id=id_afilhado)
     nome_afilhado = afilhado.nome
+    nascimento_afilhado = afilhado.data_nascimento
+    caracteristicas_afilhado = afilhado.caracteristicas
+    historia_afilhado = afilhado.historia
+    sobre_mim_afilhado = afilhado.sobre_mim
 
-    return render(request, 'apps/perfil_afilhado.html', {'nome': nome_afilhado})
+    return render(request, 'apps/perfil_afilhado.html', {'nome': nome_afilhado, 'nascimento': nascimento_afilhado, 'caracteristicas': caracteristicas_afilhado, 'historia':historia_afilhado, 'sobre_mim': sobre_mim_afilhado})
 
 def excluir_perfil(request):
     erro = False
@@ -175,3 +180,20 @@ def acessar_status(request):
     }
 
     return render(request, 'apps/acessar_status.html', status)
+
+def feedback(request):
+    return render(request,'apps/feedback.html')
+
+def acessar_feedback(request):
+    if request.method == 'POST':
+        novo_feedback = Feedback()
+        novo_feedback.texto = request.POST.get('texto')
+        novo_feedback.feedback = request.POST.get('feedback')
+
+        if novo_feedback.texto and novo_feedback.feedback:
+            novo_feedback.save()
+
+    feedbacks = {
+        'feedbacks': Feedback.objects.all()
+    }
+    return render(request,'apps/acessar_perfil.html', feedbacks)

@@ -1,0 +1,24 @@
+{% extends 'apps/baseprincipal.html' %}
+{% block content %}
+<br>
+<br>
+<br>
+    <div class="container">
+        <table class="table table-bordered table-striped" name="feedback">
+            <tr>
+                <th>Texto</th>
+                <th>Feedback</th>
+            </tr>
+            {% for feedback in feedbacks %}
+            <tr>
+                <td>{{feedbacks.texto}}</td>
+                <td>{{feedbacks.feedbacks}}</td>
+            </tr>
+            {% endfor %}
+        </table>
+        <a class="navbar-brand" href="{% url 'portalfuncionarios' %}" name="portalfuncionarios">
+            <h4>Voltar</h4>
+        </a>
+    </div>
+
+{% endblock content %}

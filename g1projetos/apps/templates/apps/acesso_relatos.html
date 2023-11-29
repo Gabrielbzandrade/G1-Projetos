@@ -11,11 +11,13 @@
             <tr>
                 <th>Nome</th>
                 <th>Relato</th>
+                <th>Status</th>
             </tr>
             {% for relato in relatos %}
             <tr>
                 <td>{{relato.titulo}}</td>
                 <td>{{relato.texto}}</td>
+                <td>{{relato.status}}</td>
             </tr>
             {% endfor %}
         </table>
