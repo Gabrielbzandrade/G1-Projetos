@@ -3,6 +3,9 @@
 <br>
 <br>
 <br>
+<br>
+<br>
+<br>
     <div class="container">
         <table class="table table-bordered table-striped" name="feedback">
             <tr>
@@ -11,8 +14,8 @@
             </tr>
             {% for feedback in feedbacks %}
             <tr>
-                <td>{{feedbacks.texto}}</td>
-                <td>{{feedbacks.feedbacks}}</td>
+                <td>{{feedback.texto}}</td>
+                <td>{{feedback.feedback}}</td>
             </tr>
             {% endfor %}
         </table>

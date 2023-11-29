@@ -3,3 +3,4 @@ from .models import *
 
 admin.site.register(Perfil)
 admin.site.register(Relatos)
+admin.site.register(Calendario)

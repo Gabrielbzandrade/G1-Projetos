@@ -11,7 +11,7 @@ def transparencia(request):
 def loginpadrinhos(request):
     context = {
         'title': 'Login Padrinhos',
-        'texts': ['E-mail'],
+        'texts': ['Usuário'],
         'passwords': ['Senha'],                          # Mudar para pagina de esquecimento de senha
         'links': [{'title': 'Esqueceu sua senha?', 'ref': 'inicio'}, {'title': 'Criar Conta', 'ref': 'cadastropadrinhos'}],
         'entrar': 'portalpadrinhos' # Mudar para portalpadrinhos
@@ -21,7 +21,7 @@ def loginpadrinhos(request):
 def loginfuncionarios(request):
     context = {
         'title': 'Login Funcionários',
-        'texts': ['E-mail'],
+        'texts': ['Usuário'],
         'passwords': ['Senha'],                   # Mudar para pagina de esquecimento de senha
         'links': [{'title': 'Esqueceu sua senha?', 'ref': 'inicio'}, {'title': 'Criar Conta Institucional', 'ref': 'cadastrofuncionarios'}],
         'entrar': 'portalfuncionarios' 
@@ -196,4 +196,4 @@ def acessar_feedback(request):
     feedbacks = {
         'feedbacks': Feedback.objects.all()
     }
-    return render(request,'apps/acessar_perfil.html', feedbacks)
+    return render(request,'apps/acessar_feedback.html', feedbacks)

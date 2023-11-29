@@ -7,12 +7,21 @@
 <br>
 <h1>Eventos:</h1>
 <br>
-    <ul>
+<div class="container">
+    <table class="table table-bordered table-striped" name="tabelaCalendario">
+        <tr>
+            <th>Data</th>
+            <th>Evento</th>
+        </tr>
         {% for evento in eventos %}
-            <li><h5>{{ evento.data}} - {{ evento.evento }}</h5></li>
+        <tr>
+            <td>{{evento.data}}</td>
+            <td>{{evento.evento}}</td>
+        </tr>
         {% endfor %}
-    </ul>
-    <a class="navbar-brand" href="{% url 'portalpadrinhos' %}" name="voltar">
-            <h4>Voltar</h4>
-        </a>
+    </table>
+    <a class="navbar-brand" href="{% url 'portalpadrinhos' %}">
+        <h5>Voltar</h5>
+    </a>
+</div>
 {% endblock content %}

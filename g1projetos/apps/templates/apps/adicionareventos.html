@@ -19,7 +19,7 @@
     <form class= "center" method="post">
         {% csrf_token %}
         {{ form.as_p }}
-        <button type="submit">Salvar Evento</button>
+        <button class="btn btn-danger" type="submit">Salvar Evento</button>
     </form>
     <div class="bottomleft">
         <a class="navbar-brand" href="{% url 'portalfuncionarios' %}" name="voltar">
