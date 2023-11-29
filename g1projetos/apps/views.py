@@ -116,13 +116,29 @@ def Afilhados_padrinhos(request):
     return render(request, 'apps/Afilhados_padrinhos.html', {'afilhados': Afilhados})
 
 def Afilhados_funcionarios(request):
-    Afilhados = Perfil.objects.all()
-    return render(request, 'apps/Afilhados_funcionarios.html', {'afilhados': Afilhados})
+    if request.method == 'POST':
+        novo_perfil = Perfil()
+        novo_perfil.nome = request.POST.get('nome')
+        novo_perfil.padrinho = request.POST.get('padrinho')
+        novo_perfil.data_nascimento = request.POST.get('data_nascimento')
+        novo_perfil.caracteristicas = request.POST.get('caracteristicas')
+        novo_perfil.historia = request.POST.get('historia')
+        novo_perfil.sobre_mim = request.POST.get('sobre_mim')
+
+        if novo_perfil.nome and novo_perfil.data_nascimento and novo_perfil.caracteristicas and novo_perfil.historia and novo_perfil.sobre_mim and novo_perfil.padrinho:
+            novo_perfil.save()
+
+    perfils = {
+        'perfils': Perfil.objects.all()
+    }
+
+    return render(request, 'apps/Afilhados_funcionarios.html', perfils)
 
 def perfil_afilhado(request, id_afilhado):
     afilhado = get_object_or_404(Perfil, id=id_afilhado)
     nome_afilhado = afilhado.nome
-    return render(request, 'apps/perfil_afilhado.html', {'afilhado': afilhado, 'nome_afilhado': nome_afilhado})
+
+    return render(request, 'apps/perfil_afilhado.html', {'nome': nome_afilhado})
 
 def excluir_perfil(request):
     erro = False

@@ -1,9 +1,18 @@
 {% extends 'apps/baseprincipal.html' %}
 {% block content %}
-<h1>Eventos</h1>
+<br>
+<br>
+<br>
+<br>
+<br>
+<h1>Eventos:</h1>
+<br>
     <ul>
         {% for evento in eventos %}
-            <li>{{ evento.data}} - {{ evento.nome }}</li>
+            <li><h5>{{ evento.data}} - {{ evento.evento }}</h5></li>
         {% endfor %}
     </ul>
+    <a class="navbar-brand" href="{% url 'portalpadrinhos' %}" name="voltar">
+            <h4>Voltar</h4>
+        </a>
 {% endblock content %}
