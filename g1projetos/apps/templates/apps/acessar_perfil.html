@@ -1,6 +1,5 @@
 {% extends 'apps/baseprincipal.html' %}
 {% block content %}
-
 <br>
 <br>
 <br>
@@ -11,6 +10,7 @@
         <table class="table table-bordered table-striped" name="tabela">
             <tr>
                 <th>Nome</th>
+                <th>Padrinho</th>
                 <th>Data Nascimento</th>
                 <th>Características</th>
                 <th>História</th>
@@ -19,6 +19,7 @@
             {% for perfil in perfils %}
             <tr>
                 <td>{{perfil.nome}}</td>
+                <td>{{perfil.padrinho}}</td>
                 <td>{{perfil.data_nascimento}}</td>
                 <td>{{perfil.caracteristicas}}</td>
                 <td>{{perfil.historia}}</td>
@@ -27,5 +28,4 @@
             {% endfor %}
         </table>
     </div>
-
 {% endblock content %}
