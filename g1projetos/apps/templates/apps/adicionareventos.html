@@ -18,7 +18,6 @@
 <h1>Registrar Evento</h1>
     <form class= "center" method="post">
         {% csrf_token %}
-        {{ form.as_p }}
         <button class="btn btn-danger" type="submit">Salvar Evento</button>
     </form>
     <div class="bottomleft">

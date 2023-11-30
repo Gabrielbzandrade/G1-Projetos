@@ -25,14 +25,13 @@ load_dotenv(BASE_DIR / 'arquivo.env')
 TARGET_ENV = os.getenv('TARGET_ENV')
 NOT_PROD = not TARGET_ENV.lower().startswith('prod')
 
-CSRF_TRUSTED_ORIGINS = ['https://lumosdeploy.azurewebsites.net']
 
 if NOT_PROD:
     # SECURITY WARNING: don't run with debug turned on in production!
     DEBUG = True
     # SECURITY WARNING: keep the secret key used in production secret!
-    SECRET_KEY = 'django-insecure-zs5bpvneeng2r8w266rhjiqty-08$b4lehp2s(%$7!5zc9^8wg'
-    ALLOWED_HOSTS = ['lumosdeploy.azurewebsites.net']
+    SECRET_KEY = 'SECRETKEY_DO_SEU_PROJETO'
+    ALLOWED_HOSTS = []
     DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.sqlite3',
