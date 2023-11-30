@@ -25,7 +25,7 @@ load_dotenv(BASE_DIR / 'arquivo.env')
 TARGET_ENV = os.getenv('TARGET_ENV')
 NOT_PROD = not TARGET_ENV.lower().startswith('prod')
 
-CSRF_TRUSTED_ORIGINS = ['https://'+ os.environ['lumosdeploy.azurewebsites.net']]
+CSRF_TRUSTED_ORIGINS = ['https://lumosdeploy.azurewebsites.net']
 
 if NOT_PROD:
     # SECURITY WARNING: don't run with debug turned on in production!
