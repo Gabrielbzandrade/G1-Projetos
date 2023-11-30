@@ -60,7 +60,6 @@ else:
     # SECURITY WARNING: keep the secret key used in production secret!
     SECRET_KEY = 'django-insecure-1jb1wip@qo&36c4d_^=lhno4d#7ijj61n4-s!xlf^wvz1vfk'
     ALLOWED_HOSTS = ["https://lumosdeploy.azurewebsites.net", "127.0.0.1"]
-    CSRF_TRUSTED_ORIGINS = 'https://lumosdeploy.azurewebsites.net/'
     
 # Application definition
 
