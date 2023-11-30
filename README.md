@@ -72,10 +72,6 @@ https://miro.com/welcomeonboard/cXNkUWs5VU5wQ2hQTlRZQjBQOTA5QWI4dUQ2bHVJUkdkRmVy
 
 [ADICIONAR]
 
-<h2>Screencast do Processo de Build CD/CI:</h2>
-
-[ADICIONAR]
-
 <h2>Screencast da Aplicação Web:</h2>
 
 [ADICIONAR]
