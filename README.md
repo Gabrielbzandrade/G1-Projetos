@@ -59,3 +59,7 @@ Cada membro da equipe contribuiu de forma singular durante as sessões de desenv
 
 <h2>Screencast Protótipo de Média:</h2>
 https://drive.google.com/file/d/11Ri95G2A0XiJ4_brw3cqsWMp0-5nEucg/view?usp=sharing
+
+<h2>Diagrama de Atividades:</h2>
+
+https://miro.com/welcomeonboard/cXNkUWs5VU5wQ2hQTlRZQjBQOTA5QWI4dUQ2bHVJUkdkRmVyMUlxQnlQZHl0Yk5vZ2tic25oOTNGN2JCWTRudnwzNDU4NzY0NTY4MzA0NjAzNDcxfDI=?share_link_id=4797968858)https://miro.com/welcomeonboard/cXNkUWs5VU5wQ2hQTlRZQjBQOTA5QWI4dUQ2bHVJUkdkRmVyMUlxQnlQZHl0Yk5vZ2tic25oOTNGN2JCWTRudnwzNDU4NzY0NTY4MzA0NjAzNDcxfDI=?share_link_id=4797968858
