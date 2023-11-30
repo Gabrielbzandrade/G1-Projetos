@@ -18,7 +18,8 @@
 <h1>Registrar Evento</h1>
     <form class= "center" method="post">
         {% csrf_token %}
-        <button class="btn btn-danger" type="submit">Salvar Evento</button>
+        {{ form.as_p }}
+        <button class="btn btn-danger" type="submit" name="salvar">Salvar Evento</button>
     </form>
     <div class="bottomleft">
         <a class="navbar-brand" href="{% url 'portalfuncionarios' %}" name="voltar">

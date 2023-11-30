@@ -12,12 +12,12 @@ PATH = webdriver.ChromeService(executable_path="C:\Program Files (x86)\chromedri
 driver = webdriver.Chrome(options=options, service=PATH)
 
 driver.get("http://127.0.0.1:8000/")
-print(f"\nTeste de Criar Eventos no site {driver.title}")
+print(f"\nTeste de Adicionar feedback no site {driver.title}")
 
 try:
     sleep(2)
-    erro = "clicar portal funcionarios"
-    elemento = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.NAME, "portal_funcionarios")))
+    erro = "clicar portal padrinhos"
+    elemento = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.NAME, "portal_padrinhos")))
     elemento.click()
 
     sleep(3)
@@ -26,32 +26,31 @@ try:
     elemento.click()
 
     sleep(2)
-    erro = "clicar atualizar calendário"
-    elemento = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.NAME, "calendario")))
+    erro = "clicar feedback"
+    elemento = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.NAME, "feedback")))
     elemento.click()
     
     sleep(1)
-    erro = "digitar data"
-    elemento = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.NAME, "data")))
+    erro = "digitar texto"
+    elemento = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.NAME, "texto")))
     elemento.clear()
-    elemento.send_keys("11/30/2023")
-    
-    sleep(1)
-    erro = "digitar evento"
-    elemento = driver.find_element(By.NAME, "evento")
-    elemento.clear()
-    elemento.send_keys("SR2")
+    elemento.send_keys("Um texto de possíveis melhorias aqui")
     
     sleep(2)
-    erro = "clicar salvar"
-    elemento = driver.find_element(By.NAME, "salvar")
+    erro = "clicar normal"
+    elemento = driver.find_element(By.ID, "Normal")
+    elemento.click()
+    
+    sleep(2)
+    erro = "clicar enviar feedback"
+    elemento = driver.find_element(By.NAME, "enviar_feedback")
     elemento.click()
     
     sleep(4)
     erro = "printar tabela"
-    tabela = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.NAME, "tabelaCalendario")))
+    tabela = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.NAME, "feedback")))
     
-    if "Nov. 30, 2023 SR2" in tabela.text:
+    if "Um texto de possíveis melhorias aqui Normal" in tabela.text:
         print("Teste realizado com Sucesso!")
     else:
         print("Falha no teste")

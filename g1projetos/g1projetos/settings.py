@@ -31,7 +31,7 @@ if NOT_PROD:
     DEBUG = True
     # SECURITY WARNING: keep the secret key used in production secret!
     SECRET_KEY = 'django-insecure-820wq9zsrw6=9ooblnb_pt%(fw78@h&v&gshuk+3yq_fcfess4'
-    ALLOWED_HOSTS = ["localhost 127.0.0.1 [::1] lumosdeploy.azurewebsites.net"]
+    ALLOWED_HOSTS = []
     CSRF_TRUSTED_ORIGINS = ["https://lumosdeploy.azurewebsites.net"]
     DATABASES = {
         'default': {
