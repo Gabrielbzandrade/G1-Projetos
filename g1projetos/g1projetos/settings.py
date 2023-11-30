@@ -61,6 +61,8 @@ else:
     }
     
 # Application definition
+ALLOWED_HOSTS = ['IP', 'subdomain.domain.com']
+CSRF_TRUSTED_ORIGINS = ['https://*.domain.com']
 
 INSTALLED_APPS = [
     'django.contrib.admin',
