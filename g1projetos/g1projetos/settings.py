@@ -30,8 +30,9 @@ if NOT_PROD:
     # SECURITY WARNING: don't run with debug turned on in production!
     DEBUG = True
     # SECURITY WARNING: keep the secret key used in production secret!
-    SECRET_KEY = 'SECRETKEY_DO_SEU_PROJETO'
-    ALLOWED_HOSTS = []
+    SECRET_KEY = 'django-insecure-820wq9zsrw6=9ooblnb_pt%(fw78@h&v&gshuk+3yq_fcfess4'
+    ALLOWED_HOSTS = ["localhost 127.0.0.1 [::1] lumosdeploy.azurewebsites.net"]
+    CSRF_TRUSTED_ORIGINS = ["https://lumosdeploy.azurewebsites.net/"]
     DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.sqlite3',
