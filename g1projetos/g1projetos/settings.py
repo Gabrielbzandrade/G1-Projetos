@@ -27,10 +27,6 @@ NOT_PROD = not TARGET_ENV.lower().startswith('prod')
 
 if NOT_PROD:
     # SECURITY WARNING: don't run with debug turned on in production!
-    DEBUG = True
-    # SECURITY WARNING: keep the secret key used in production secret!
-    SECRET_KEY = 'django-insecure-zs5bpvneeng2r8w266rhjiqty-08$b4lehp2s(%$7!5zc9^8wg'
-    ALLOWED_HOSTS = []
     DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.sqlite3',
@@ -59,6 +55,11 @@ else:
             'OPTIONS': {'sslmode': 'require'},
         }
     }
+
+    DEBUG = True
+    # SECURITY WARNING: keep the secret key used in production secret!
+    SECRET_KEY = 'django-insecure-1jb1wip@qo&36c4d_^=lhno4d#7ijj61n4-s!xlf^wvz1vfk'
+    ALLOWED_HOSTS = ["lumosdeploy.azurewebsites.net", "127.0.0.1"]
     
 # Application definition
 
