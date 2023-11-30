@@ -26,31 +26,37 @@ try:
     elemento.click()
 
     sleep(2)
-    erro = "clicar acessar perfil"
-    elemento = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.NAME, "acessarperfil")))
-    elemento.click()
-
-    sleep(2)
-    erro = "clicar excluir perfil"
-    elemento = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.NAME, "ir_para_excluir")))
+    erro = "clicar relato"
+    elemento = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.NAME, "atualizacao")))
     elemento.click()
     
     sleep(1)
-    erro = "digitar nome"
-    elemento = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.NAME, "nome")))
+    erro = "digitar titulo"
+    elemento = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.NAME, "titulo")))
     elemento.clear()
     elemento.send_keys("Sandra")
+
+    sleep(1)
+    erro = "digitar relato"
+    elemento = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.NAME, "texto")))
+    elemento.clear()
+    elemento.send_keys("Ela participou de uma oficina de arte e pintou um quadro cheio de cores e sorrisos. Foi tão legal ver como ela estava concentrada, escolhendo as cores e desenhando com tanto carinho. Depois, ela mostrou para todos com um brilho nos olhos. A alegria que ela sentiu ao compartilhar sua obra nos deixou emocionados.")
     
     sleep(2)
-    erro = "clicar excluir"
-    elemento = driver.find_element(By.NAME, "excluir")
+    erro = "clicar feliz"
+    elemento = driver.find_element(By.ID, "Feliz")
+    elemento.click()
+    
+    sleep(2)
+    erro = "clicar cadastrar relato"
+    elemento = driver.find_element(By.NAME, "cadastrar_relato")
     elemento.click()
     
     sleep(4)
     erro = "printar tabela"
     tabela = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.NAME, "tabela")))
     
-    if "Sandra Hugo 09/12/2003 Artística e quieta Nunca teve acesso a uma educação de qualidade mas sempre gostou de desenhar Meu sonho é ser uma pintora famosa" not in tabela.text:
+    if "Sandra Ela participou de uma oficina de arte e pintou um quadro cheio de cores e sorrisos. Foi tão legal ver como ela estava concentrada, escolhendo as cores e desenhando com tanto carinho. Depois, ela mostrou para todos com um brilho nos olhos. A alegria que ela sentiu ao compartilhar sua obra nos deixou emocionados. Feliz" in tabela.text:
         print("Teste realizado com Sucesso!")
     else:
         print("Falha no teste")
