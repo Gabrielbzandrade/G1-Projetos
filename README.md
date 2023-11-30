@@ -74,6 +74,6 @@ https://miro.com/welcomeonboard/cXNkUWs5VU5wQ2hQTlRZQjBQOTA5QWI4dUQ2bHVJUkdkRmVy
 
 <h2>Screencast da Aplicação Web:</h2>
 
-[ADICIONAR]
+https://www.loom.com/share/f036e029f7d44830a9ed17f06aa4a6ee?sid=b4caa0ce-f05c-4682-b3ff-30c6b04285d9
 
 
