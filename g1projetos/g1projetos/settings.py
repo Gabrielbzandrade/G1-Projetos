@@ -59,6 +59,7 @@ else:
             'OPTIONS': {'sslmode': 'require'},
         }
     }
+
     
 # Application definition
 
