@@ -102,12 +102,12 @@
 
         <div>
             {% for link in links %}
-            <a href="{% url link.ref %}" class="forget">{{link.title}}</a>
+            <a href="{% url link.ref %}" class="forget" name="forget">{{link.title}}</a>
             <br>
             {% endfor %}
         </div>
 
-        <a href="{% url entrar %}" class="btn">Entrar</a>
+        <a href="{% url entrar %}" class="btn" name="entrar">Entrar</a>
     </form>
 </div>
 {% endblock content %}
