@@ -13,9 +13,7 @@ Equipe Ciência da Computação Étmus:
 - Letícia Gomes da Silva - lgs@cesar.school
 - Leticia Lopes Moreira - llm3@cesar.school
 
-<h1>--SR1------------</h1>
-
-<h2>Link do Desenvolvimento Web:</h2>
+<h2>Link da Aplicação Web:</h2>
 
 https://lumosdeploy.azurewebsites.net 
 
@@ -23,11 +21,11 @@ https://lumosdeploy.azurewebsites.net
 
 https://docs.google.com/document/d/1zfiQK3KUENMLTBgaPRnRAKbZ2JexZd_piTdchEgYtv4/edit?pli=1
 
-<h2>Screencast:</h2>
+<h2>Screencast Protótipo Lo-fi:</h2>
 
 https://drive.google.com/file/d/1YW19rTx8aWZ5lqP0KNIiDnaWW78rQE6k/view?usp=sharing
 
-<h2>Diagrama de Atividades:</h2>
+<h2>Diagrama de Atividades SR1:</h2>
 
 https://miro.com/app/board/uXjVNb8t0ag=/?share_link_id=141006039923
 
