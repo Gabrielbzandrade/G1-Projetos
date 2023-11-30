@@ -58,3 +58,6 @@ https://miro.com/app/board/uXjVNb8t0ag=/?share_link_id=141006039923
 3- Leticia Lopes e Gabriel Caetano formaram uma dupla dinâmica o que facilitou no aprendizado da dupla. Ambos trabalham bem juntos, se complementando durante o processo e trazendo leveza as reuniões. Ambos trouxeram uma carga de pesquisas realizadas anteriormente, facilitando o desenvolvimento dos códigos. 
 
 Cada membro da equipe contribuiu de forma singular durante as sessões de desenvolvimento. A diversidade de habilidades e perspectivas resultou em um ambiente altamente produtivo que agregou conhecimento a todos do grupo.
+
+<h2>Screencast Protótipo de Média:</h2>
+https://drive.google.com/file/d/11Ri95G2A0XiJ4_brw3cqsWMp0-5nEucg/view?usp=sharing
