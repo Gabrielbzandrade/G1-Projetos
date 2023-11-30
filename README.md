@@ -70,7 +70,7 @@ https://miro.com/welcomeonboard/cXNkUWs5VU5wQ2hQTlRZQjBQOTA5QWI4dUQ2bHVJUkdkRmVy
 
 <h2>Screencast do Processo de Build CD/CI:</h2>
 
-[ADICIONAR]
+https://www.loom.com/share/34c6c0dd36a14fbd929d00dbff73ff9d?sid=242018a6-7e72-499d-830c-ea05f168149e
 
 <h2>Screencast da Aplicação Web:</h2>
 
