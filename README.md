@@ -66,7 +66,8 @@ https://miro.com/welcomeonboard/cXNkUWs5VU5wQ2hQTlRZQjBQOTA5QWI4dUQ2bHVJUkdkRmVy
 
 <h2>Screencast do Teste de Sistemas:</h2>
 
-[ADICIONAR] 
+Parte 1: https://www.loom.com/share/f4dde47e83fa4040b7c247d5479d24eb
+parte 2: https://www.loom.com/share/ad10288c09b84b8999ba3393cc67993c
 
 <h2>Screencast do Processo de Build CD/CI:</h2>
 
